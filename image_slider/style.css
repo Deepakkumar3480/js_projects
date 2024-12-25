@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+.panel{
+    background-size: cover;
+    height: 80vh;
+    width: 80vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    flex: 0.5;
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+    transition: flex 0.7s;
+}
+
+.active{
+    flex: 5;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+}
