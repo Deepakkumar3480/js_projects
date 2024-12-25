@@ -1,0 +1,20 @@
+
+body{
+    height: 90vh;
+    background-color: rgb(173, 158, 137);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+#textarea{
+    padding: 10px;
+    background-color: rgb(173, 167, 167);
+    color: red;
+    border-radius: 10px;
+    text-align: center;
+}
