@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="css">
+            <label for="width">Width</label>
+            <input type="range" id="width" name="width" min="10" value="50" data-sizing="%">
+
+            <label for="br-r">Border-Radius</label>
+            <input type="range" id="br-r" name="br-r" min="5" max="180" value="50" data-sizing="px">
+
+            <label for="base">Color</label>
+            <input type="color" name="base" value="#252525" data-sizing="">
+
+            <label for="padding">Padding</label>
+            <input type="range" id="padding" name="padding" min="0"  data-sizing="px">
+
+            <label for="blur">Blur</label>
+            <input type="range" id="blur" name="blur" min="0" max="100" value="0"  data-sizing="px">
+        </div>
+        <img src="https://images.pexels.com/photos/28879419/pexels-photo-28879419/free-photo-of-passengers-enjoy-scenic-montserrat-view.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    --padding:10px;
+    --blur:0px;
+    --base:rgb(200, 21, 21);
+    --width:60%;
+    --br-r:5px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+img{
+    width: var(--width);
+    height: 80%;
+    margin-top: 1rem;
+    padding: var(--padding);
+    filter: blur(var(--blur));
+    border-radius: var(--br-r);
+    background-color: var(--base);
+}
+label{
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.container{
+    border-radius: 50px;
+    background-color: #ffc2da;
+    padding: 2rem;
+}
