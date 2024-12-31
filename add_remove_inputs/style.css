@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(42, 32, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.section{
+    width: 60%;
+    background-color: rgb(34, 30, 34);
+    padding: 10px;
+    margin: 10px;
+}
+#survey_options{
+    display: flex;
+    flex-direction: column;
+}
+#survey_options input{
+    padding: 5px;
+    margin: 5px;
+}
+.controls{
+    margin-left: 10px;
+    
+    width: 95%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.controls a{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(4, 4, 4);
+    background-color: rgba(241, 232, 232, 0.6);
+}
