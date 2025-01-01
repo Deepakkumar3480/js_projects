@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: azure;
+    cursor: grabbing;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.container span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+.container span::before{
+    content:'';
+    position: absolute;
+    background:url(https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=400);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: 10s;
+    pointer-events: none;
+    opacity: 0;
+}
+.container span:hover::before{
+    opacity: 1;
+    transition: 0s;
+    width: 500%;
+    height: 500%;
+}
