@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    /* height: 100vh; */
+}
+.container i{
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px lightblue;
+    animation: rotate linear infinite;
+}
+.container i:nth-child(even){
+    background-color: transparent;
+    border: 2px solid black;
+}
+@keyframes rotate {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-2000%);
+    }
+}
